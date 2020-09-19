@@ -13,8 +13,9 @@ export type Node = {
   content?: ReactNode | ReactElement,
   coordinates?: number[],
   inputs?: Port[],
-  outputs?: Port,
+  outputs?: Port[],
   type?: 'default',
+  render?: Function
   renderer?: ElementType,
   className?: string,
 };
